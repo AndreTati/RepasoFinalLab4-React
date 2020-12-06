@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.titulo{
+  font-size: 25px;
+  font-family: Verdana;
+  color: red;
+}
+
+.parrafo{
+  font-size: 15px;
+  font-family: Verdana;
+}
+
+.destacado{
+  font-size: 15px;
+  font-family: Verdana;
+  background-color: orange;
+  color: white;
+  width: 95%;
+}
+
+.centrado{
+  text-align: center;
+}
+
+.maxAltoImg{
+  max-height: 180px;
+}
+
+.minAltoImg{
+  min-height: 300px;
+  max-height: 300px;
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.tituloContacto{
+  color: grey;
+  margin-top: 25px;
+}
+
+.parrafoContacto{
+  font-size: 20px;
+}
