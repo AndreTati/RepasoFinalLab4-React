@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+
+import './assets/css/App.css';
+import Switch from 'react-bootstrap/esm/Switch';
+import { Route } from 'react-router-dom';
+import ListaHeroes from './components/ListaHeroes';
+import DetalleHeroe from './components/DetalleHeroe';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Switch>
+      <Route exact path="/" component={ListaHeroes}></Route>
+      <Route exact path="/heroes-dc" component={ListaHeroes}></Route>
+      <Route exact path="/heroes-marvel" component={ListaHeroes}></Route>
+      <Route exact path="/buscar/:palabra" component={ListaHeroes}></Route>
+      <Route exact path="/detalle/:id" component={DetalleHeroe}></Route>
+    </Switch>
   );
 }
 
