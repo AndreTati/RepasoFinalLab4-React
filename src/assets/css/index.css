@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+table{
+  border: solid 1px black;
+  border-collapse: collapse;
+  width: 170px;
+  height: 200px;
+  margin-top: 20px;
+  
+}
+
+tr{
+  border: solid 1px black;
+  text-align: center;
+}
+
+.bordeFila{
+  border-bottom: solid 1px green;
+}
+
+.maxAltoImg{
+  max-height: 180px;
+}
+
+.minAltoImg{
+  min-height: 300px;
+  max-height: 300px;
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.tituloHome{
+  font-size: 18px;
+  font-family: Verdana;
+  color: green;
+  margin-top: 20px;
+}
+
+.tituloMapa{
+  color:blue;
+  margin-top: 20px;
+}

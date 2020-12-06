@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './assets/images/logo.svg';
+import './assets/css/App.css';
+import { Component } from 'react';
+import Switch from 'react-bootstrap/esm/Switch';
+import { Route } from 'react-router-dom';
+import Home from './components/Home';
+import MapaArgentina from './components/MapaArgentina';
+import DetalleProvincia from './components/DetalleProvincia';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render(){
+    return (
+      <Switch>
+        <Route exact path="/" component={Home}></Route>
+        <Route exact path="/provincias-puerto" component={Home}></Route>
+        <Route exact path="/buscar/:valor" component={Home}></Route>
+        <Route exact path="/mapa" component={MapaArgentina}></Route>
+        <Route exact path="/detalle/:id" component={DetalleProvincia}></Route>
+      </Switch>
+    );
+  }
 }
 
 export default App;
