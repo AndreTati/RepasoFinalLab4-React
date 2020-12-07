@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.promocion{
+  color:green;
+  font-size: 50px;
+  font-family: Verdana;
+}
+
+.noPromocion{
+  color: red;
+  font-size: 45px;
+  font-family: Verdana;
+}
+
+.alineacionVertical{
+  margin-top: 72px;
+}

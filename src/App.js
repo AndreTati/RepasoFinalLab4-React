@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Switch from 'react-bootstrap/esm/Switch';
+import { Route } from 'react-router-dom';
+import './assets/css/App.css';
+import DetalleArticulo from './components/DetalleArticulo';
+import GrillaArticulos from './components/GrillaArticulos';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Switch>
+      <Route exact path="/" component={GrillaArticulos}></Route>
+      <Route exact path="/codigo/:busqueda" component={GrillaArticulos}></Route>
+      <Route exact path="/denominacion/:busqueda" component={GrillaArticulos}></Route>
+      <Route exact path="/detalle/:id" component={DetalleArticulo}></Route>
+    </Switch>
   );
 }
 
